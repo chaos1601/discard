@@ -1,0 +1,177 @@
+@charset "utf-8";
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&family=PT+Sans&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border-style: none;
+    vertical-align: baseline;
+    box-sizing: border-box;
+}
+
+:root {
+    --app-dark-bg: #1a1d28;
+    --app-grey-bg: #393939b8;
+    --app-white: #ffff;
+    --app-red: #ff3c57;
+    --app-green: #33ab4e;
+    --app-purple: #833cff;
+    --app-orange: #ff833c;
+    --app-blue: #3c57ff;
+    --app-blue-hover: #364ee6;
+    --app-line-height: 60px;
+    --app-header-width: 150px;
+}
+
+body {
+    background-color: var(--app-dark-bg);
+    font-family: 'Fira Sans', Arial, Helvetica, sans-serif;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+}
+
+.container {
+    width: min(100% - 30px, 1080px);
+    margin-inline: auto;
+}
+
+.flexbox {
+    display: flex;
+}
+
+header {
+    background-color: var(--app-green-bg);
+    height: 60px;
+    overflow: hidden;
+    width: 100%;
+}
+
+header div {
+    width: 40%;
+}
+
+h1 {
+    font-size: 18px;
+    width: var(--app-header-width);
+    font-weight: 600;
+    color: var(--app-white);
+    line-height: var(--app-line-height);
+    text-transform: uppercase;
+    letter-spacing: 0.2px;
+}
+
+nav {
+    width: 40%;
+}
+
+nav ul {
+    font-size: 0;
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    line-height: var(--app-line-height);
+}
+
+nav ul li a {
+    display: inline-block;
+    padding: 0 15px;
+    font-size: 16px;
+    color: #ffff;
+    text-decoration: none;
+    transition: color 0.25s ease-in-out;
+    text-align: center;
+}
+
+.subscribe {
+    color: var(--app-red);
+    width: 40%;
+    line-height: var(--app-line-height);
+    text-align: end;
+}
+
+.subscribe img {
+    height: 55px;
+    border-radius: 50%;
+    padding-top: 5px;
+    cursor: pointer;
+}
+
+.input-container {
+    position: relative;
+    display: inline-block;
+}
+
+.box-wrapper {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.box {
+    padding-left: 5px;
+    height: 106px;
+    width: 240px;
+    padding-right: 40px;
+    background-color: var(--app-grey-bg);
+    color: var(--app-white);
+    border: none;
+    border-radius: 5px;
+}
+
+.file-input {
+    position: absolute;
+    bottom: -3px;
+    right: 173px;
+    padding: 8px 12px;
+    background-color: transparent;
+    color: var(--app-white);
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.post-button {
+    position: absolute;
+    bottom: 0;
+    right: 10px;
+    transform: translateY(-50%);
+    width: 30px;
+    background: none;
+    border: none;
+    color: var(--app-white);
+    cursor: pointer;
+}
+
+.posts {
+    width: 50%;
+    background-color: var(--app-white);
+    margin: 5px auto;
+}
+
+.post-header {
+    display: flex;
+    width: 100%;
+}
+
+.post {
+    margin: 10px 0;
+}
+
+.post img {
+    height: 100%;
+    width: 100%;
+    padding: 5px;
+}
+
+h3 {
+    padding-left: 5px;
+}
+
+.post-header p {
+    margin-left: 58%;
+}
